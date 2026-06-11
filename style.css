@@ -22,29 +22,11 @@ h2 {
 hr {
     margin-top: 30px;
     margin-bottom: 30px;
-
-
-
-    .button {
-    display: inline-block;
-    background-color: #9b2c1f;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 6px;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.button:hover {
-    opacity: 0.9;
-}
 }
 
 strong {
     color: #9b2c1f;
 }
-
 
 .hero {
     text-align: center;
@@ -58,7 +40,6 @@ strong {
     font-weight: bold;
     color: #9b2c1f;
 }
-
 
 .button {
     display: inline-block;
@@ -74,4 +55,3 @@ strong {
 .button:hover {
     opacity: 0.9;
 }
-
