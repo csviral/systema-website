@@ -8,10 +8,33 @@ background-color: #faf8f5;
 color: #222;
 }
 
+nav {
+text-align: center;
+padding: 20px;
+margin-bottom: 20px;
+border-bottom: 2px solid #ddd;
+}
+
+nav a {
+color: #9b2c1f;
+text-decoration: none;
+font-weight: bold;
+margin: 0 15px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
 .hero-image img {
 width: 100%;
 border-radius: 12px;
 margin-bottom: 30px;
+}
+
+.hero {
+text-align: center;
+padding: 20px;
 }
 
 h1 {
@@ -25,9 +48,8 @@ color: #9b2c1f;
 margin-top: 40px;
 }
 
-.hero {
-text-align: center;
-padding: 20px;
+h3 {
+color: #9b2c1f;
 }
 
 .tagline {
