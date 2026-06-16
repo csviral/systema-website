@@ -23,7 +23,7 @@
 
 <div class="hero">
 
-
+```
 <p class="tagline">
     Practical training for real life.
 </p>
@@ -41,13 +41,13 @@
        Watch Videos
     </a>
 </p>
-
+```
 
 </div>
 
 <div class="training-box" id="training">
 
-
+```
 <h2>Next Training Session</h2>
 
 <p><strong>📍 Reid Park, Tucson, Arizona</strong></p>
@@ -59,15 +59,7 @@
 <p>Beginner Friendly</p>
 
 <p>Systema HQ Affiliated Training Group</p>
-
-<p>
-    <a class="button"
-       href="https://youtube.com/@SystemaStillnessUnderPressure"
-       target="_blank">
-       Learn More
-    </a>
-</p>
-
+```
 
 </div>
 
@@ -75,27 +67,42 @@
 
 <div class="cards">
 
-
-<div class="card">
+```
+<div class="card" onclick="openModal('breath')">
     <h3>🫁 Breath</h3>
-    <p>Control your breath. Control your state.</p>
+    <p>Click to learn more</p>
 </div>
 
-<div class="card">
+<div class="card" onclick="openModal('structure')">
     <h3>🏛 Structure</h3>
-    <p>Strong, relaxed, efficient movement.</p>
+    <p>Click to learn more</p>
 </div>
 
-<div class="card">
+<div class="card" onclick="openModal('timing')">
     <h3>⏱ Timing</h3>
-    <p>The right action at the right moment.</p>
+    <p>Click to learn more</p>
 </div>
 
-<div class="card">
+<div class="card" onclick="openModal('awareness')">
     <h3>👁 Awareness</h3>
-    <p>See clearly. Stay present. Stay free.</p>
+    <p>Click to learn more</p>
+</div>
+```
+
 </div>
 
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+```
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2 id="modal-title"></h2>
+
+    <div id="modal-text"></div>
+
+</div>
+```
 
 </div>
 
@@ -106,17 +113,11 @@
 <p>
 Systema is a practical training method focused on breathing,
 movement, awareness, adaptability, and remaining calm under pressure.
-Training develops resilience, mobility, coordination, confidence,
-and the ability to remain relaxed and effective under stress.
 </p>
 
 <hr>
 
 <h2 id="videos">YouTube Channel</h2>
-
-<p>
-Watch training clips, drills, discussions, and class footage on our YouTube channel.
-</p>
 
 <p>
 https://youtube.com/@SystemaStillnessUnderPressure
@@ -129,6 +130,91 @@ https://youtube.com/@SystemaStillnessUnderPressure
 <p>
 Contact information coming soon.
 </p>
+
+<script>
+
+function openModal(type) {
+
+const title = document.getElementById("modal-title");
+const text = document.getElementById("modal-text");
+
+if(type === "breath") {
+
+title.innerHTML = "🫁 Breath";
+
+text.innerHTML = `
+<h3>Why it matters in daily life</h3>
+<p>Breathing influences stress, energy, focus, and emotional control. Learning to regulate your breathing helps you remain calm and think clearly under pressure.</p>
+
+<h3>Why we use it in Systema</h3>
+<p>Breath is the foundation of every exercise and helps students remain relaxed while training.</p>
+
+<h3>How it improves movement</h3>
+<p>Good breathing reduces tension, improves endurance, and allows movement to remain natural and efficient.</p>
+`;
+
+}
+
+if(type === "structure") {
+
+title.innerHTML = "🏛 Structure";
+
+text.innerHTML = `
+<h3>Why it matters in daily life</h3>
+<p>Good structure improves posture, balance, movement, and reduces unnecessary strain on the body.</p>
+
+<h3>Why we use it in Systema</h3>
+<p>Students learn natural alignment and efficient movement rather than relying on strength alone.</p>
+
+<h3>How it improves movement</h3>
+<p>Proper structure creates stronger, smoother movement with less effort.</p>
+`;
+
+}
+
+if(type === "timing") {
+
+title.innerHTML = "⏱ Timing";
+
+text.innerHTML = `
+<h3>Why it matters in daily life</h3>
+<p>Good timing improves communication, decision-making, and problem solving.</p>
+
+<h3>Why we use it in Systema</h3>
+<p>Students learn to recognize opportunities and act at the right moment.</p>
+
+<h3>How it improves movement</h3>
+<p>Good timing allows techniques to work with less force and greater efficiency.</p>
+`;
+
+}
+
+if(type === "awareness") {
+
+title.innerHTML = "👁 Awareness";
+
+text.innerHTML = `
+<h3>Why it matters in daily life</h3>
+<p>Awareness helps people recognize opportunities, risks, emotions, and changes before they become problems.</p>
+
+<h3>Why we use it in Systema</h3>
+<p>Awareness helps students understand what is happening around them and within themselves.</p>
+
+<h3>How it improves movement</h3>
+<p>Aware students adapt more quickly and respond appropriately under pressure.</p>
+`;
+
+}
+
+document.getElementById("modal").style.display = "block";
+
+}
+
+function closeModal() {
+document.getElementById("modal").style.display = "none";
+}
+
+</script>
 
 </body>
 
