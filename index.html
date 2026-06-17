@@ -1,246 +1,37 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stillness Under Pressure</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#about">Systema</a>
-    <a href="#training">Training</a>
-    <a href="#videos">YouTube</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="hero-image">
-    <img src="now.png" alt="Stillness Under Pressure">
-</div>
-
-<div class="hero">
-
-```
-<h1>Stillness Under Pressure</h1>
-
-<p class="tagline">
-    Systema Training in Tucson, Arizona
-</p>
-
-<h2>Stay Calm. Stay Free.</h2>
-
-<p>
-    Practical training for real life.
-</p>
-
-<p>
-    Calm under pressure. Freedom in motion.
-</p>
-
-<a class="button" href="#training">
-    Attend a Class
-</a>
-
-<a class="button"
-   href="https://youtube.com/@SystemaStillnessUnderPressure"
-   target="_blank">
-    Watch Videos
-</a>
-```
-
-</div>
-
-<div id="training" class="training-box">
-
-```
-<h2>Training Information</h2>
-
-<p>📍 Reid Park, Tucson, Arizona</p>
-
-<p>📅 Every Tuesday</p>
-
-<p>🕠 5:30 PM - 7:30 PM</p>
-
-<p>Beginner Friendly</p>
-
-<p>Systema HQ Affiliated Training Group</p>
-```
-
-</div>
-
-<hr>
-
-<section id="about">
-
-```
-<h2>Four Core Principles</h2>
-
 <div class="cards">
 
-    <div class="card" onclick="openModal('breath')">
-        <h3>🫁 Breath</h3>
-        <p>
-            Continuous breathing creates calm,
-            removes tension, and allows free movement.
-        </p>
-    </div>
-
-    <div class="card" onclick="openModal('structure')">
-        <h3>🏛 Structure</h3>
-        <p>
-            Natural alignment and connection create
-            strength, efficiency, and resilience.
-        </p>
-    </div>
-
-    <div class="card" onclick="openModal('timing')">
-        <h3>⏱ Timing</h3>
-        <p>
-            Feel the moment, adapt continuously,
-            and respond naturally.
-        </p>
-    </div>
-
-    <div class="card" onclick="openModal('awareness')">
-        <h3>👁 Awareness</h3>
-        <p>
-            Stay present with yourself,
-            others, and your surroundings.
-        </p>
-    </div>
-
+```
+<div class="card" onclick="openModal('breath')">
+    <h3>🫁 Breath</h3>
+    <p>
+        Continuous breathing creates calm,
+        removes tension, and allows free movement.
+    </p>
 </div>
-```
 
-</section>
+<div class="card" onclick="openModal('structure')">
+    <h3>🏛 Structure</h3>
+    <p>
+        Natural alignment and connection create
+        strength, efficiency, and resilience.
+    </p>
+</div>
 
-<hr>
+<div class="card" onclick="openModal('timing')">
+    <h3>⏱ Timing</h3>
+    <p>
+        Feel the moment, adapt continuously,
+        and respond naturally.
+    </p>
+</div>
 
-<section id="videos">
-
-```
-<h2>YouTube Channel</h2>
-
-<p>
-    Watch training clips, drills, discussions,
-    and class footage on our YouTube channel.
-</p>
-
-<a class="button"
-   href="https://youtube.com/@SystemaStillnessUnderPressure"
-   target="_blank">
-    Visit Channel
-</a>
-```
-
-</section>
-
-<hr>
-
-<section id="contact">
-
-```
-<h2>Contact</h2>
-
-<p>
-    Interested in training? Come visit a class.
-</p>
-
-<p>
-    Reid Park, Tucson, Arizona
-</p>
-
-<p>
-    Tuesdays, 5:30 PM - 7:30 PM
-</p>
-```
-
-</section>
-
-<div id="modal" class="modal">
-
-```
-<div class="modal-content">
-
-    <span class="close" onclick="closeModal()">
-        &times;
-    </span>
-
-    <div id="modal-text"></div>
-
+<div class="card" onclick="openModal('awareness')">
+    <h3>👁 Awareness</h3>
+    <p>
+        Stay present with yourself,
+        others, and your surroundings.
+    </p>
 </div>
 ```
 
 </div>
-
-<script>
-
-function openModal(type) {
-
-    const text = document.getElementById("modal-text");
-
-    if (type === "breath") {
-
-        text.innerHTML = `
-            <img src="brethe.png" class="principle-image">
-
-            <div class="principle-notes">
-                <h3>Videos Coming Soon</h3>
-                <p>Training videos and drills will be added here.</p>
-            </div>
-        `;
-    }
-
-    if (type === "structure") {
-
-        text.innerHTML = `
-            <img src="structure.png" class="principle-image">
-
-            <div class="principle-notes">
-                <h3>Videos Coming Soon</h3>
-                <p>Training videos and drills will be added here.</p>
-            </div>
-        `;
-    }
-
-    if (type === "timing") {
-
-        text.innerHTML = `
-            <img src="timing.png" class="principle-image">
-
-            <div class="principle-notes">
-                <h3>Videos Coming Soon</h3>
-                <p>Training videos and drills will be added here.</p>
-            </div>
-        `;
-    }
-
-    if (type === "awareness") {
-
-        text.innerHTML = `
-            <img src="wrness.png" class="principle-image">
-
-            <div class="principle-notes">
-                <h3>Videos Coming Soon</h3>
-                <p>Training videos and drills will be added here.</p>
-            </div>
-        `;
-    }
-
-    document.getElementById("modal").style.display = "block";
-}
-
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
-
-</script>
-
-</body>
-
-</html>
