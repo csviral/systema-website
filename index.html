@@ -25,7 +25,7 @@
 
 <div class="hero">
 
-
+```
 <h1>Stillness Under Pressure</h1>
 
 <p class="tagline">
@@ -51,13 +51,13 @@
    target="_blank">
     Watch Videos
 </a>
-
+```
 
 </div>
 
 <div id="training" class="training-box">
 
-
+```
 <h2>Training Information</h2>
 
 <p>📍 Reid Park, Tucson, Arizona</p>
@@ -69,7 +69,7 @@
 <p>Beginner Friendly</p>
 
 <p>Systema HQ Affiliated Training Group</p>
-
+```
 
 </div>
 
@@ -77,7 +77,7 @@
 
 <section id="about">
 
-
+```
 <h2>Four Core Principles</h2>
 
 <div class="cards">
@@ -115,7 +115,7 @@
     </div>
 
 </div>
-
+```
 
 </section>
 
@@ -123,7 +123,7 @@
 
 <section id="videos">
 
-
+```
 <h2>YouTube Channel</h2>
 
 <p>
@@ -136,7 +136,7 @@
    target="_blank">
     Visit Channel
 </a>
-
+```
 
 </section>
 
@@ -144,12 +144,11 @@
 
 <section id="contact">
 
-
+```
 <h2>Contact</h2>
 
 <p>
-    Interested in training?
-    Come visit a class.
+    Interested in training? Come visit a class.
 </p>
 
 <p>
@@ -159,9 +158,88 @@
 <p>
     Tuesdays, 5:30 PM - 7:30 PM
 </p>
-
+```
 
 </section>
+
+<div id="modal" class="modal">
+
+```
+<div class="modal-content">
+
+    <span class="close" onclick="closeModal()">
+        &times;
+    </span>
+
+    <div id="modal-text"></div>
+
+</div>
+```
+
+</div>
+
+<script>
+
+function openModal(type) {
+
+    const text = document.getElementById("modal-text");
+
+    if (type === "breath") {
+
+        text.innerHTML = `
+            <img src="brethe.png" class="principle-image">
+
+            <div class="principle-notes">
+                <h3>Videos Coming Soon</h3>
+                <p>Training videos and drills will be added here.</p>
+            </div>
+        `;
+    }
+
+    if (type === "structure") {
+
+        text.innerHTML = `
+            <img src="structure.png" class="principle-image">
+
+            <div class="principle-notes">
+                <h3>Videos Coming Soon</h3>
+                <p>Training videos and drills will be added here.</p>
+            </div>
+        `;
+    }
+
+    if (type === "timing") {
+
+        text.innerHTML = `
+            <img src="timing.png" class="principle-image">
+
+            <div class="principle-notes">
+                <h3>Videos Coming Soon</h3>
+                <p>Training videos and drills will be added here.</p>
+            </div>
+        `;
+    }
+
+    if (type === "awareness") {
+
+        text.innerHTML = `
+            <img src="wrness.png" class="principle-image">
+
+            <div class="principle-notes">
+                <h3>Videos Coming Soon</h3>
+                <p>Training videos and drills will be added here.</p>
+            </div>
+        `;
+    }
+
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+</script>
 
 </body>
 
